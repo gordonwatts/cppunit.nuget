@@ -20,7 +20,7 @@ These instructions assume you have installed locally:
 1. Check out this package
 2. Download a source code snapshot of cppunit from source forge repo. Unpack it at the same level as this repo's directory (cd "ls ../cpunit" from this repo will give a listing.
 3. In the root directory there is a Build2010 solution file. Open it, and allow it to convert. It may not be able to convert the MSI file - that is ok.
-
+4. Build both the Release and the Debug configurations of the cppunit project (that is the only one required).
 
 XX. Update the description in the autopkg file to match the date of the last check in.
 

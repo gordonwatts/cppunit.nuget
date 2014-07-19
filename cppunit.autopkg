@@ -7,6 +7,7 @@ nuget {
         owners = {G. Watts};
         licenseUrl: "http://root.cern.ch/drupal/content/license";
         projectUrl: "https://github.com/gordonwatts/cppunit.nuget";
+		iconUrl: "file://icon.jpg";
         requireLicenseAcceptance: false;
         summary: CppUnit test toolkit for C++;
         description: Add to an empty console application to get a text based CppUnit test runner;
@@ -16,9 +17,12 @@ nuget {
 
     files {
     
-        # include: { "root\include\*"};
+        include: { "..\cppunit\include\**\*"};
         
-        [x86,vc12] {
+        [x86, debug] {
+            lib: { "..\cppunit\lib\cppunitd.lib" };
+        };
+        [x86, release] {
             lib: { "..\cppunit\lib\cppunit.lib" };
         };
     }
