@@ -1,0 +1,25 @@
+nuget {
+    nuspec {
+        id = cppunit;
+        version = 1.12.1.1;
+        title = CppUnit;
+        authors = {G. Watts};
+        owners = {G. Watts};
+        licenseUrl: "http://root.cern.ch/drupal/content/license";
+        projectUrl: "https://github.com/gordonwatts/cppunit.nuget";
+        requireLicenseAcceptance: false;
+        summary: CppUnit test toolkit for C++;
+        description: Add to an empty console application to get a text based CppUnit test runner;
+        releaseNotes: "First release based on the 11/30/2013 checkin of CppUnit";
+        tags: test C++ CppUnit;
+    };
+
+    files {
+    
+        # include: { "root\include\*"};
+        
+        [x86,vc12] {
+            lib: { "..\cppunit\lib\cppunit.lib" };
+        };
+    }
+}
