@@ -10,14 +10,14 @@ nuget {
 		iconUrl: "file://icon.jpg";
         requireLicenseAcceptance: false;
         summary: CppUnit test toolkit for C++;
-        description: Add to an empty console application to get a text based CppUnit test runner;
-        releaseNotes: "First release based on the 11/30/2013 checkin of CppUnit";
+        description: Add to an empty console application to get a text based CppUnit test runner. Make sure to include the test driver;
+        releaseNotes: "First release based on the 11/30/2013 checkin on CppUnit";
         tags: test C++ CppUnit;
     };
 
     files {
     
-        include: { "..\cppunit\include\**\*"};
+        include: { "..\cppunit\include\**\*", ".\include\**\*" };
         
         [x86, debug] {
             lib: { "..\cppunit\lib\cppunitd.lib" };
