@@ -1,7 +1,7 @@
 nuget {
     nuspec {
         id = cppunit;
-        version = 1.12.1.1;
+        version = 1.12.1.2;
         title = CppUnit;
         authors = {G. Watts};
         owners = {G. Watts};
@@ -11,7 +11,7 @@ nuget {
         requireLicenseAcceptance: false;
         summary: CppUnit test toolkit for C++;
         description: Add to an empty console application to get a text based CppUnit test runner. Make sure to include the test driver;
-        releaseNotes: "First release based on the 11/30/2013 checkin on CppUnit";
+        releaseNotes: "Based on the 11/30/2013 checkin on CppUnit. Added VC2012 and VC2013 debug/rel builds.";
         tags: test C++ CppUnit;
     };
 
@@ -19,11 +19,22 @@ nuget {
     
         include: { "..\cppunit\include\**\*", ".\include\**\*" };
         
-        [x86, debug] {
-            lib: { "..\cppunit\lib\cppunitd.lib" };
-        };
-        [x86, release] {
-            lib: { "..\cppunit\lib\cppunit.lib" };
-        };
+		[v120] {
+			[x86, debug] {
+				lib: { "..\cppunit\vc12\cppunitd.lib" };
+			};
+			[x86, release] {
+				lib: { "..\cppunit\vc12\cppunit.lib" };
+			};
+		};
+
+		[v110] {
+			[x86, debug] {
+				lib: { "..\cppunit\vc11\cppunitd.lib" };
+			};
+			[x86, release] {
+				lib: { "..\cppunit\vc11\cppunit.lib" };
+			};
+		};
     }
 }
