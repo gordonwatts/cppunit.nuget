@@ -14,6 +14,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Nuget packages
+*.nupkg
+
 # =========================
 # Operating System Files
 # =========================
