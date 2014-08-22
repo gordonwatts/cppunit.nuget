@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "standalonerunner", "standalonerunner\standalonerunner.vcxproj", "{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - vc11|Win32 = Debug - vc11|Win32
+		Debug - vc12|Win32 = Debug - vc12|Win32
+		Release - vc11|Win32 = Release - vc11|Win32
+		Release - vc12|Win32 = Release - vc12|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Debug - vc11|Win32.ActiveCfg = Debug - vc11|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Debug - vc11|Win32.Build.0 = Debug - vc11|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Debug - vc12|Win32.ActiveCfg = Debug - vc12|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Debug - vc12|Win32.Build.0 = Debug - vc12|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Release - vc11|Win32.ActiveCfg = Release - vc11|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Release - vc11|Win32.Build.0 = Release - vc11|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Release - vc12|Win32.ActiveCfg = Release - vc12|Win32
+		{A47BF661-A8B1-4431-8768-18C5CD5AD1D1}.Release - vc12|Win32.Build.0 = Release - vc12|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
