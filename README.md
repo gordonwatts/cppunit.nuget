@@ -28,3 +28,7 @@ These instructions assume you have installed locally:
 6. Repeat for both versions of VS. Easiest is to open with 2013, and then select the downlevel tools to build.
 7. Update the description in the autopkg file to match the date of the last check in.
 
+-- This uses some features of the coapp tools that are only at the head, so download that, build, and then you can type:
+
+ Write-NuGetPackage .\cppunit.autopkg -SplitThreshold 10000000000
+
