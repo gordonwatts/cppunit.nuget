@@ -24,7 +24,7 @@ These instructions assume you have installed locally:
 2. Download a source code snapshot of cppunit from source forge repo. Unpack it so that the cppunit directory is at the same level as cppunit.nuget (you'll get packing errors when you try to build the package if you don't do this). See http://sourceforge.net/p/cppunit/code/HEAD/tree/trunk/cppunit/
 3. In the root directory there is a Build2010 solution file. Open it, and allow it to convert. It may not be able to convert the MSI file - that is ok.
 4. Build both the Release and the Debug configurations of the cppunit project (that is the only one required).
-5. at the same level as teh cppunit.nuget directory, create a cppunit/vc11 and cppunit/vc12 directory. Copy the debug and non-debug cppunit libraries in there.
-6. Repeate for both versions of VS. Easiest is to open with 2013, and then select the downlevel tools to build.
+5. at the same level as the cppunit.nuget directory, create a cppunit/vc11 and cppunit/vc12 directory. Copy the debug and non-debug cppunit libraries in there.
+6. Repeat for both versions of VS. Easiest is to open with 2013, and then select the downlevel tools to build.
 7. Update the description in the autopkg file to match the date of the last check in.
 
